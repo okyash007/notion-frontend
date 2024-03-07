@@ -25,3 +25,7 @@ body {
     text-wrap: balance;
   }
 }
+
+.bn-editor{
+  padding-inline: 20px;
+}

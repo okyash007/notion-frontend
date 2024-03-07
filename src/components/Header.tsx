@@ -44,11 +44,11 @@ const Header = ({ isEdit, initialTitle }: { isEdit: boolean; initialTitle?: stri
     }
 
     return (
-        <div className={`flex ${window.screen.availWidth <= 768 ? 'flex-col' : 'flex-row'} justify-between items-center`}>
-            <div className="relative w-1/2" data-te-input-wrapper-init>
+        <div className="flex items-center justify-between">
+            <div className="relative flex-grow" data-te-input-wrapper-init>
                 <input
                     type="text"
-                    className={`peer text-4xl font-bold tracking-widest block min-h-[auto] ${window.screen.availWidth <= 768 ? '' : 'w-full'} rounded border-0 bg-transparent leading-[2.1] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-20`}
+                    className={`peer text-4xl font-bold block min-h-[auto] w-full pr-3 rounded border-0 bg-transparent leading-[2.1] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-20`}
                     id="exampleFormControlInputHelper"
                     placeholder="Enter Title"
                     value={title ? title : ''}

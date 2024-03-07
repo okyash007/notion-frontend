@@ -21,11 +21,10 @@ const Edit = () => {
     return (
         <main >
             {hasWindow && <>
-                <div className={`${window.screen.availWidth <= 768 ? 'px-0' : 'px-24'} my-10`}><Header isEdit={true} /></div>
-                <div className={`flex flex-col items-center justify-between ${window.screen.availWidth <= 768 ? 'px-2' : 'px-24'}`}>
-                    <div className="h-full w-full">
-                        <DisabledSSREditor onChange={(value: string) => setContent(value)} />
-                    </div>
+                <div className="p-[5%]">
+                    <Header isEdit={true} />
+                    <DisabledSSREditor onChange={(value: string) => setContent(value)} />
+
                 </div>
             </>}
         </main>

@@ -12,6 +12,10 @@ const Editor = ({ onChange, initialContent, editable = true }: DocProps) => {
         }
     }, [initialContent]);
 
+    
+
+
+
     return <BlockNoteView editor={editor} theme={"dark"} />;
 }
 
